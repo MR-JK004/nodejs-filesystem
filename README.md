@@ -88,7 +88,7 @@ To deploy your application on Render:
 1. Commit your changes to your GitHub repository.
 2. Log in to [Render](https://render.com/).
 3. Create a new web service and connect your GitHub repository.
-4. Ensure your `package.json` file specifies the correct entry point (`server.js`).
+4. Ensure your `package.json` file specifies the correct entry point (`index.js`).
 5. Trigger a deployment.
 
 ### Example `package.json`
@@ -98,9 +98,9 @@ To deploy your application on Render:
   "name": "nodejs-filesystem",
   "version": "1.0.0",
   "description": "A simple filesystem API",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
